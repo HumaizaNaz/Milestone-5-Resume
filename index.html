@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <h1>Unique url with shareable link Resume Builder By Humaiza Naz</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <label for="profile"><i class="fas fa-camera"></i> Upload Profile Picture:</label>
+            <input type="file" id="profilePicture" accept="image/*" required>
+
+            <legend>Personal Information</legend>
+            <label for="name"><i class="fas fa-user"></i> Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="Phone number format: 123-456-7890"><br>
+                
+            <label for="address"><i class="fas fa-home"></i> Address:</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="cnic"><i class="fas fa-id-card"></i> CNIC:</label>
+            <input type="text" id="cnic" name="cnic" required><br>
+
+            <label for="nationality"><i class="fas fa-flag"></i> Nationality:</label>
+            <input type="text" id="nationality" name="nationality" required><br>
+
+            <label for="gender"><i class="fas fa-genderless"></i> Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="languages"><i class="fas fa-language"></i> Languages:</label>
+            <input type="text" id="languages" name="languages" placeholder="e.g., English, Urdu" required><br>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea name="education" id="education" rows="4" maxlength="300" required></textarea>
+        </fieldset>
+
+        <!-- Experience -->
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="4" maxlength="300" required></textarea>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea name="skills" id="skills" rows="4" required></textarea><br>
+        </fieldset>
+
+        <!-- Template Selection -->
+        <fieldset>
+            <legend>Select Template</legend>
+            <label for="template">Choose a template:</label>
+            <select id="template" name="template" required>
+                <option value="elegantRose">Elegant Rose</option>
+                <option value="softLavender">Soft Lavender</option>
+                <option value="vibrantPlum">Vibrant Plum</option>
+                <option value="coolMint">Cool Mint</option>
+                <option value="sunsetOrange">Sunset Orange</option>
+                <option value="classicBlue">Classic Blue</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Generate Resume Below</button>
+        <button type="button" onclick="window.print()">Print Resume</button>
+    </form>
+
+    <div id="resumeOutput">
+        <!-- Resume Will Be Generated Below-->
+    </div><div id="uniqueUrl"></div>
+    <div id="shareButtons"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@500&display=swap");
+
+body {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffe4e4, #f9d1ff);
+  color: #21281d;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #d15eea;
+  text-shadow: 2px 0px 1px rgb(105, 5, 116);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  border: 2px solid whitesmoke;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0px 10px 20px rgba(134, 5, 125, 0.565);
+}
+
+fieldset {
+  border-radius: 12px;
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+  font-weight: bold;
+  color: #832498;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  text-shadow: 1px 0px 1px rgb(163, 29, 178);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #21281d;
+}
+
+input,
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  border: 1px solid #d1c1d1;
+  box-shadow: 0px 2px 2px rgba(134, 5, 125, 0.565);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff84ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  background-color: #832498;
+  transform: translateY(-5px);
+  box-shadow: 0px 2px 2px rgba(134, 5, 125, 0.565);
+}
+
+#resumeOutput {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+#resumeOutput h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #21281d;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-shadow: 1px 0px 1px rgb(54, 53, 54);
+  transition: color 0.3s ease;
+}
+
+#resumeOutput h3 {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff84ff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #21281d;
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+#resumeOutput p {
+  margin: 10px 0;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* General template styles */
+.template {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Elegant Rose theme */
+.elegantRose {
+  border-left: 10px solid #d15eea;
+  background: #f0f8ff;
+  padding-left: 30px;
+}
+
+.elegantRose::before {
+  content: "Elegant Rose";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #d15eea;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.elegantRose h2 {
+  color: #d15eea;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.elegantRose h3 {
+  color: #d15eea;
+  border-bottom: 2px solid #d15eea;
+}
+
+/* Soft Lavender theme */
+.softLavender {
+  border-left: 10px solid #ff84ff;
+  background: #f9e4ff;
+  padding-left: 30px;
+}
+
+.softLavender::before {
+  content: "Soft Lavender";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #ff84ff;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.softLavender h2 {
+  color: #ff84ff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.softLavender h3 {
+  color: #ff84ff;
+  border-bottom: 2px solid #ff84ff;
+}
+
+/* Vibrant Plum theme */
+.vibrantPlum {
+  border-left: 10px solid #832498;
+  background: #e4d9ff;
+  padding-left: 30px;
+}
+
+.vibrantPlum::before {
+  content: "Vibrant Plum";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #832498;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.vibrantPlum h2 {
+  color: #832498;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.vibrantPlum h3 {
+  color: #832498;
+  border-bottom: 2px solid #832498;
+}
+
+/* Cool Mint theme */
+.coolMint {
+  border-left: 10px solid #00bfae;
+  background: #e0f7f9;
+  padding-left: 30px;
+}
+
+.coolMint::before {
+  content: "Cool Mint";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #00bfae;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.coolMint h2 {
+  color: #00bfae;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.coolMint h3 {
+  color: #00bfae;
+  border-bottom: 2px solid #00bfae;
+}
+
+/* Sunset Orange theme */
+.sunsetOrange {
+  border-left: 10px solid #ff6f00;
+  background: #ffe0b2;
+  padding-left: 30px;
+}
+
+.sunsetOrange::before {
+  content: "Sunset Orange";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #ff6f00;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.sunsetOrange h2 {
+  color: #ff6f00;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sunsetOrange h3 {
+  color: #ff6f00;
+  border-bottom: 2px solid #ff6f00;
+}
+
+/* Classic Blue theme */
+.classicBlue {
+  border-left: 10px solid #0d47a1;
+  background: #e3f2fd;
+  padding-left: 30px;
+}
+
+.classicBlue::before {
+  content: "Classic Blue";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: #0d47a1;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.classicBlue h2 {
+  color: #0d47a1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.classicBlue h3 {
+  color: #0d47a1;
+  border-bottom: 2px solid #0d47a1;
+}
+
+/* Profile picture styles */
+.profilePicture {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid; /* Border color will be set dynamically */
+  box-shadow: 2px 3px 15px; /* Box shadow color will be set dynamically */
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
